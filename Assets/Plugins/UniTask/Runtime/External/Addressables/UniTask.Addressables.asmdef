@@ -1,8 +1,8 @@
 {
-    "name": "Game",
-    "rootNamespace": "Game.Model",
+    "name": "UniTask.Addressables",
     "references": [
-        "GUID:f51ebe6a0ceec4240a699833d6309b23"
+        "UniTask",
+        "Unity.ResourceManager"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],
@@ -11,6 +11,12 @@
     "precompiledReferences": [],
     "autoReferenced": true,
     "defineConstraints": [],
-    "versionDefines": [],
+    "versionDefines": [
+        {
+            "name": "com.unity.addressables",
+            "expression": "",
+            "define": "UNITASK_ADDRESSABLE_SUPPORT"
+        }
+    ],
     "noEngineReferences": false
 }
