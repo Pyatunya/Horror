@@ -2,7 +2,7 @@ using System;
 using Cysharp.Threading.Tasks;
 using UnityEngine;
 
-namespace Game.Model.Interactables
+namespace Game.Model.Items
 {
     public sealed class TextTable : MonoBehaviour
     {

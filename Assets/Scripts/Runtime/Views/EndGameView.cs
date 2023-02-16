@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace Game.Model.Interactables
+namespace Game.Model.Items
 {
     public sealed class EndGameView : MonoBehaviour
     {

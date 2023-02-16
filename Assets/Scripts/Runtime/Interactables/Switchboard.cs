@@ -3,21 +3,22 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 
-namespace Game.Model.Interactables
+namespace Game.Model.Items
 {
-    public sealed class Switchboard : MonoBehaviour, IInteractable
+    public sealed class Switchboard : MonoBehaviour, IItem
     {
         [SerializeField] private TextTable _textTable;
+        private IReadOnlyDictionary<Item, InteractionWithSwitchboard> _interactions;
 
         public bool HasInteracted { get; private set; }
 
-        private IReadOnlyDictionary<Interactable, InteractionWithSwitchboard> _interactions;
+        [field: SerializeField] public ItemData Data { get; private set; }
 
-        public void Init(IReadOnlyDictionary<Interactable, InteractionWithSwitchboard> interactions)
+        public void Init(IReadOnlyDictionary<Item, InteractionWithSwitchboard> interactions)
         {
             if (interactions.Count == 0)
                 throw new ArgumentException("Value cannot be an empty collection.", nameof(interactions));
-            
+
             _interactions = interactions ?? throw new ArgumentNullException(nameof(interactions));
         }
 
@@ -28,12 +29,12 @@ namespace Game.Model.Interactables
             if (HasInteracted)
             {
                 var interaction = _interactions.ToList().Find(interactable => interactable.Key.HasInteracted).Value;
-                
+
                 if (interaction is null)
                 {
                     _textTable.Activate();
                 }
-                
+
                 else
                 {
                     interaction.Play();

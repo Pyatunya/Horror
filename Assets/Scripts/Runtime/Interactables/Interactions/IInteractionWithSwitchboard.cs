@@ -1,4 +1,4 @@
-namespace Game.Model.Interactables
+namespace Game.Model.Items
 {
     public interface IInteractionWithSwitchboard
     {

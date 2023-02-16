@@ -1,17 +1,17 @@
 using System.Collections.Generic;
-using Game.Model.Interactables;
+using Game.Model.Items;
 using UnityEngine;
 
 namespace Game.Root
 {
     public sealed class Root : MonoBehaviour
     {
-        [SerializeField] private UnityDictionary<Interactable, InteractionWithSwitchboard> _interactions;
+        [SerializeField] private UnityDictionary<Item, InteractionWithSwitchboard> _interactions;
         [SerializeField] private Switchboard _switchboard;
 
         private void Awake()
         {
-            IReadOnlyDictionary<Interactable,InteractionWithSwitchboard> interactions = _interactions.ToDictionary();
+            IReadOnlyDictionary<Item,InteractionWithSwitchboard> interactions = _interactions.ToDictionary();
             _switchboard.Init(interactions);
         }
     }
