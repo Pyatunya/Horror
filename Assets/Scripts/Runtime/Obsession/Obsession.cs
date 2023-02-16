@@ -7,19 +7,27 @@ namespace Game.Model.Obsession
     public sealed class Obsession : MonoBehaviour
     {
         [SerializeField] private ObsessionView _view;
+        public readonly int MaxValue = 100;
         
-        [field: SerializeField, Range(0, 100)] public int Value { get; private set; }
+        public float Value { get; private set; }
 
-        public void Increase(int amount)
+        private void Start() => _view.Visualize(Value);
+
+        public bool CanIncrease(float value) => Value + value <= MaxValue && value > 0;
+        
+        public void Increase(float value)
         {
-            if (amount <= 0)
-                throw new ArgumentOutOfRangeException(nameof(amount));
-            
-            Value += amount;
+            if (value <= 0)
+                throw new ArgumentOutOfRangeException(nameof(value));
+
+            if (CanIncrease(value) == false)
+                throw new InvalidOperationException(nameof(Increase));
+
+            Value += value;
             _view.Visualize(Value);
         }
         
-        public void Decrease(int value)
+        public void Decrease(float value)
         {
             if (value <= 0)
                 throw new ArgumentOutOfRangeException(nameof(value));
