@@ -348,6 +348,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 3925900050113154851, guid: 4540c20d884a55d4389dd1811a6df415, type: 3}
+      propertyPath: m_Offset.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3925900050113154852, guid: 4540c20d884a55d4389dd1811a6df415, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -1342114795885536740, guid: 0e07d7994fb29664b9965ba3b4820048, type: 3}
     - target: {fileID: 3925900050113154853, guid: 4540c20d884a55d4389dd1811a6df415, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -358,7 +366,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3925900050113154853, guid: 4540c20d884a55d4389dd1811a6df415, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.8162498
+      value: -3.315
       objectReference: {fileID: 0}
     - target: {fileID: 3925900050113154853, guid: 4540c20d884a55d4389dd1811a6df415, type: 3}
       propertyPath: m_LocalPosition.z
