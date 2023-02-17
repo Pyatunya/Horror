@@ -11,8 +11,8 @@ namespace Game.Model.Character
 
         public void Move(Vector2 direction)
         {
-            if (direction.x != 0)
-                _spriteRenderer.flipX = direction.x < 0;
+            if(direction.x != 0f)
+            _spriteRenderer.flipX = direction.x < 0f;
 
             if (direction == Vector2.zero)
             {
