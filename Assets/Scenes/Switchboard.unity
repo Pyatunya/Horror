@@ -287,6 +287,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40844a15330e482e867ae1f2fdfe09d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _needDisableOnTook: 1
   <Data>k__BackingField: {fileID: 11400000, guid: 572b486abd77c04429d6b4d9a206a85a, type: 2}
 --- !u!114 &91162044
 MonoBehaviour:
@@ -1686,7 +1687,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1805163160
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1798,13 +1799,13 @@ MonoBehaviour:
   m_Padding:
     m_Left: 94
     m_Right: 0
-    m_Top: 80
+    m_Top: 107
     m_Bottom: 0
   m_ChildAlignment: 0
   m_StartCorner: 0
   m_StartAxis: 0
   m_CellSize: {x: 100, y: 100}
-  m_Spacing: {x: 131.99, y: 0}
+  m_Spacing: {x: 131.99, y: 219.15}
   m_Constraint: 0
   m_ConstraintCount: 2
 --- !u!114 &1830278836
