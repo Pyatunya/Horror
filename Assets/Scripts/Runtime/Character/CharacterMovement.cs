@@ -1,20 +1,25 @@
 using UnityEngine;
 
-public class CharacterMovement : MonoBehaviour
+namespace Game.Model.Character
 {
-    private float _speed = 5f;
-    private Rigidbody2D _characterRb;
-
-    private void Awake()
+    public sealed class CharacterMovement : MonoBehaviour
     {
-        _characterRb = GetComponent<Rigidbody2D>();
-    }
+        [SerializeField] private CharacterMovementView _view;
+    
+        private readonly float _speed = 5f;
+        private Rigidbody2D _characterRb;
 
-    private void FixedUpdate()
-    {
-        float horizontal = Input.GetAxis("Horizontal");
-        Vector2 direction = new Vector2(horizontal * _speed * Time.deltaTime, 0f);
+        private void Awake()
+        {
+            _characterRb = GetComponent<Rigidbody2D>();
+        }
 
-        _characterRb.MovePosition((Vector2)transform.localPosition + direction);
+        private void FixedUpdate()
+        {
+            float horizontal = Input.GetAxis("Horizontal");
+            Vector2 direction = new Vector2(horizontal * _speed * Time.deltaTime, 0f);
+            _characterRb.MovePosition((Vector2)transform.localPosition + direction);
+            _view.Move(direction);
+        }
     }
 }
