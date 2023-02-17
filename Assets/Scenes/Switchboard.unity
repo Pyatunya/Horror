@@ -2052,6 +2052,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1337420189}
     m_Modifications:
+    - target: {fileID: 28321334087501747, guid: fdea887d1cc7d7c46a39b02ce210cad3, type: 3}
+      propertyPath: m_text
+      value: "\u041D\u0435\u0442\u0443 \u043D\u0443\u0436\u043D\u044B\u0445 \u0432\u0435\u0449\u0435\u0439"
+      objectReference: {fileID: 0}
     - target: {fileID: 6794563625319957818, guid: fdea887d1cc7d7c46a39b02ce210cad3, type: 3}
       propertyPath: m_Name
       value: TextTable
