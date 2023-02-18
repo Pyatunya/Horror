@@ -5,20 +5,28 @@ namespace Game.Model.Character
     public sealed class Character : MonoBehaviour
     {
         private Interactable _currentInteract;
-        readonly private ItemsStorage _itemStorage;
-        private Transformer tempTransformer;
+        private Transformer _transformer;
+        public bool HasKey { get; private set; }
+        public bool HasGloves { get; private set; }
 
         private void OnTriggerEnter2D(Collider2D collision)
         {
             SetLinkToDevice(collision);
+
+            if (collision.gameObject.TryGetComponent(out Key key))
+            {
+                HasKey = true;
+            }
+            else if (collision.gameObject.TryGetComponent(out Glowes gloves))
+            {
+                HasGloves = true;
+            }
         }
 
         private void SetLinkToDevice(Collider2D collision)
         {
             if (collision.TryGetComponent(out Interactable interactable))
                 _currentInteract = interactable;
-            else if (TryGetComponent(out Transformer transformer))
-                _currentInteract = transformer;
         }
 
         private void OnTriggerExit2D(Collider2D collision)
@@ -33,9 +41,9 @@ namespace Game.Model.Character
             {
                 SwitchDeviceState();
             }
-            else if(Input.GetKeyDown(KeyCode.F) && _currentInteract == tempTransformer)
+            else if(Input.GetKeyDown(KeyCode.F) && _currentInteract == _transformer)
             {
-                if (_itemStorage.HasGlowes())
+                if (HasGloves)
                 {
                     GameState.EndGame();
                 }
@@ -48,13 +56,10 @@ namespace Game.Model.Character
 
         private void SwitchDeviceState()
         {
-            if (_currentInteract == tempTransformer && _itemStorage.HasKeys())
-                _currentInteract.Open();
-
             if (_currentInteract.CheckCurrentState())
                 _currentInteract.Close();
             else
-                _currentInteract.Open();
+                _currentInteract.Open();         
         }
     }
 }

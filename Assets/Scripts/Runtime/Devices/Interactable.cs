@@ -17,7 +17,7 @@ namespace Game.Model
             _spriteRenderer = GetComponent<SpriteRenderer>();
         }
 
-        public void Open()
+        public virtual void Open()
         {
             _spriteRenderer.sprite = _openState;
         }
