@@ -21,13 +21,13 @@ AnimationClip:
   - curve:
     - time: 0
       value: {fileID: -1188349298462841962, guid: 0e07d7994fb29664b9965ba3b4820048, type: 3}
-    - time: 0.16666667
+    - time: 0.125
       value: {fileID: -3912154655613464303, guid: 0e07d7994fb29664b9965ba3b4820048, type: 3}
-    - time: 0.41666666
+    - time: 0.375
       value: {fileID: 5806241391559312960, guid: 0e07d7994fb29664b9965ba3b4820048, type: 3}
-    - time: 0.7083333
+    - time: 0.625
       value: {fileID: -3912154655613464303, guid: 0e07d7994fb29664b9965ba3b4820048, type: 3}
-    - time: 0.9166667
+    - time: 0.7916667
       value: {fileID: -1188349298462841962, guid: 0e07d7994fb29664b9965ba3b4820048, type: 3}
     attribute: m_Sprite
     path: 
@@ -58,7 +58,7 @@ AnimationClip:
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 0.9583334
+    m_StopTime: 0.8333334
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
@@ -77,18 +77,4 @@ AnimationClip:
   m_EulerEditorCurves: []
   m_HasGenericRootTransform: 0
   m_HasMotionFloatCurves: 0
-  m_Events:
-  - time: 0.125
-    functionName: PlayOnStep
-    data: 
-    objectReferenceParameter: {fileID: 0}
-    floatParameter: 0
-    intParameter: 0
-    messageOptions: 0
-  - time: 0.6666667
-    functionName: PlayOnStep
-    data: 
-    objectReferenceParameter: {fileID: 0}
-    floatParameter: 0
-    intParameter: 0
-    messageOptions: 0
+  m_Events: []

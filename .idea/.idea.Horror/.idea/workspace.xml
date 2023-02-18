@@ -2,18 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cd4e3fd0-247d-42f8-8ca2-1a5893b0b430" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Horror/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Horror/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Interier.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Interier.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Light.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Light.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Switchboard.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Switchboard.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Runtime/Character/CharacterMovementView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Runtime/Character/CharacterMovementView.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Runtime/StepSound.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -78,7 +72,6 @@
       <updated>1676556061482</updated>
       <workItem from="1676556070558" duration="2623000" />
       <workItem from="1676646385358" duration="1408000" />
-      <workItem from="1676714218224" duration="1293000" />
     </task>
     <servers />
   </component>

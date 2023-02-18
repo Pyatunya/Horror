@@ -24,18 +24,21 @@ namespace Game.Model.Items
 
         public void Interact()
         {
-            HasInteracted = true;
+            HasInteracted = !HasInteracted;
 
-            var interaction = _interactions.ToList().Find(interactable => interactable.Key.HasInteracted).Value;
-
-            if (interaction is null)
+            if (HasInteracted)
             {
-                _textTable.Activate();
-            }
+                var interaction = _interactions.ToList().Find(interactable => interactable.Key.HasInteracted).Value;
 
-            else
-            {
-                interaction.Play();
+                if (interaction is null)
+                {
+                    _textTable.Activate();
+                }
+
+                else
+                {
+                    interaction.Play();
+                }
             }
         }
     }
