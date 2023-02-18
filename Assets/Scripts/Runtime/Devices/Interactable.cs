@@ -4,11 +4,10 @@ using UnityEngine;
 
 namespace Game.Model
 {
-    [RequireComponent(typeof(SpriteRenderer))]
-    public class Fridge : MonoBehaviour
+    public class Interactable : MonoBehaviour
     {
         [SerializeField] private Sprite _closeState;
-        [SerializeField] private Sprite _openState;        
+        [SerializeField] private Sprite _openState;
 
         private SpriteRenderer _sriteRenderer;
 
@@ -25,6 +24,11 @@ namespace Game.Model
         public void Open()
         {
             _sriteRenderer.sprite = _openState;
+        }
+
+        public bool CheckState()
+        {
+            return _sriteRenderer.sprite == _openState;
         }
     }
 }
