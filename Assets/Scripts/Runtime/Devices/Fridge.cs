@@ -4,27 +4,18 @@ using UnityEngine;
 
 namespace Game.Model
 {
-    [RequireComponent(typeof(SpriteRenderer))]
     public class Fridge : MonoBehaviour
     {
-        [SerializeField] private Sprite _closeState;
-        [SerializeField] private Sprite _openState;        
-
-        private SpriteRenderer _sriteRenderer;
-
-        private void Start()
+        // Start is called before the first frame update
+        void Start()
         {
-            _sriteRenderer = GetComponent<SpriteRenderer>();
+        
         }
 
-        public void Close()
+        // Update is called once per frame
+        void Update()
         {
-            _sriteRenderer.sprite = _closeState;
-        }
-
-        public void Open()
-        {
-            _sriteRenderer.sprite = _openState;
+        
         }
     }
 }
