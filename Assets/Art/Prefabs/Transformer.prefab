@@ -10,9 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1913927673403350678}
   - component: {fileID: 1913927673403350672}
+  - component: {fileID: 4902676833977689114}
   - component: {fileID: 1913927673403350679}
-  - component: {fileID: 492343193646896119}
-  - component: {fileID: 1913927673403350674}
   m_Layer: 0
   m_Name: Transformer
   m_TagString: Untagged
@@ -27,7 +26,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1913927673403350677}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 41.2, y: -0.71, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -85,6 +84,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &4902676833977689114
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1913927673403350677}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d74bc1596eee0c42ac3b25f07d6fedd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _closeState: {fileID: 21300000, guid: 30b1a45c341a6344b9b7bab8ace1d9e9, type: 3}
+  _openState: {fileID: 21300000, guid: 39a8dfb890e3adf42ba9b2c395245288, type: 3}
 --- !u!61 &1913927673403350679
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -101,7 +114,7 @@ BoxCollider2D:
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
+    pivot: {x: 0, y: 0.5}
     oldSize: {x: 1.48, y: 2.56}
     newSize: {x: 0.74, y: 1.28}
     adaptiveTilingThreshold: 0.5
@@ -111,31 +124,3 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.48, y: 2.56}
   m_EdgeRadius: 0
---- !u!114 &492343193646896119
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1913927673403350677}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1d16cd8eada3b2748a96b038f44ed44c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _closeState: {fileID: 21300000, guid: 30b1a45c341a6344b9b7bab8ace1d9e9, type: 3}
-  _openState: {fileID: 21300000, guid: 39a8dfb890e3adf42ba9b2c395245288, type: 3}
---- !u!114 &1913927673403350674
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1913927673403350677}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 312380fb1e004cf3a584780be527dafc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _textTable: {fileID: 0}
-  <Data>k__BackingField: {fileID: 11400000, guid: 4d45b7fd555de8840968fe4d184e4e35, type: 2}

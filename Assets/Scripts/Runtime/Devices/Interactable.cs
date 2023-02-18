@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -29,6 +30,11 @@ namespace Game.Model
         public bool CheckCurrentState()
         {
             return _spriteRenderer.sprite == _openState;
+        }
+
+        internal void LightningHit()
+        {
+            Debug.Log("≈бать теб€ уебало");
         }
     }
 }
