@@ -25,5 +25,10 @@ namespace Game.Model
         {
             _spriteRenderer.sprite = _closeState;
         }
+
+        public bool CheckCurrentState()
+        {
+            return _spriteRenderer.sprite == _openState;
+        }
     }
 }
