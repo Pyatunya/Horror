@@ -11,8 +11,8 @@ GameObject:
   - component: {fileID: 1913927673403350678}
   - component: {fileID: 1913927673403350672}
   - component: {fileID: 1913927673403350679}
+  - component: {fileID: 492343193646896119}
   - component: {fileID: 1913927673403350674}
-  - component: {fileID: 1913927673403350673}
   m_Layer: 0
   m_Name: Transformer
   m_TagString: Untagged
@@ -111,6 +111,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.48, y: 2.56}
   m_EdgeRadius: 0
+--- !u!114 &492343193646896119
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1913927673403350677}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d16cd8eada3b2748a96b038f44ed44c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _closeState: {fileID: 21300000, guid: 30b1a45c341a6344b9b7bab8ace1d9e9, type: 3}
+  _openState: {fileID: 21300000, guid: 39a8dfb890e3adf42ba9b2c395245288, type: 3}
 --- !u!114 &1913927673403350674
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -125,18 +139,3 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _textTable: {fileID: 0}
   <Data>k__BackingField: {fileID: 11400000, guid: 4d45b7fd555de8840968fe4d184e4e35, type: 2}
---- !u!114 &1913927673403350673
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1913927673403350677}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 335db420e9ae4130a7a74eced9a3d1bd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _spriteRenderer: {fileID: 1913927673403350672}
-  _closeSprite: {fileID: 21300000, guid: 39a8dfb890e3adf42ba9b2c395245288, type: 3}
-  _openSprite: {fileID: 21300000, guid: 30b1a45c341a6344b9b7bab8ace1d9e9, type: 3}
