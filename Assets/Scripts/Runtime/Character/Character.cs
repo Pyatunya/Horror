@@ -18,6 +18,7 @@ namespace Game.Model.Character
 
         [SerializeField] private KeyPanelInventory _keyPanel;
         [SerializeField] private GlovesPanelInventory _glovesPanel;
+        [SerializeField] private AudioClip _screamer;
 
 
         public bool HasKey { get; private set; }
@@ -26,6 +27,8 @@ namespace Game.Model.Character
         private GameState1 _gameState;
 
         private StairsMovement _floorState;
+
+        private AudioSource _audio;
 
         private bool _isOnLeftWall;
 
@@ -64,6 +67,9 @@ namespace Game.Model.Character
             if (collision.gameObject.TryGetComponent(out Transformer transformer))
             {
                 _currentInteract = transformer;
+            }
+            {
+
             }
         }
 

@@ -3603,7 +3603,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!108 &815965575
 Light:
   m_ObjectHideFlags: 0
@@ -4831,6 +4831,14 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 473251318}
     - target: {fileID: 3813976218855110978, guid: 4540c20d884a55d4389dd1811a6df415, type: 3}
+      propertyPath: _screamer
+      value: 
+      objectReference: {fileID: 8300000, guid: d0959b8c8c3be82418d0ca3ee367fa83, type: 3}
+    - target: {fileID: 3813976218855110978, guid: 4540c20d884a55d4389dd1811a6df415, type: 3}
+      propertyPath: leftWall2
+      value: 
+      objectReference: {fileID: 1159729197}
+    - target: {fileID: 3813976218855110978, guid: 4540c20d884a55d4389dd1811a6df415, type: 3}
       propertyPath: _glovesPanel
       value: 
       objectReference: {fileID: 435799496}
@@ -4898,7 +4906,8 @@ PrefabInstance:
       propertyPath: _secondFloor
       value: 
       objectReference: {fileID: 1587315590}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6593192562623662795, guid: 4540c20d884a55d4389dd1811a6df415, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 4540c20d884a55d4389dd1811a6df415, type: 3}
 --- !u!1 &1234670985
 GameObject:
@@ -4929,7 +4938,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!82 &1234670987
 AudioSource:
@@ -6492,7 +6501,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1913927673403350678, guid: 08f99abce21a74448af3b017491ed9cb, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1913927673403350678, guid: 08f99abce21a74448af3b017491ed9cb, type: 3}
       propertyPath: m_LocalPosition.x
@@ -7734,6 +7743,50 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &2038966744
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2038966746}
+  - component: {fileID: 2038966745}
+  m_Layer: 0
+  m_Name: ChertSpawnPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2038966745
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2038966744}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b549f719e4a01f047a39ab3c081b1204, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _chert: {fileID: 1358702535950490172, guid: 39158b804fc2e71469458e38d55c0707, type: 3}
+--- !u!4 &2038966746
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2038966744}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -25.4, y: -3.9, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2048885499
 GameObject:
   m_ObjectHideFlags: 0

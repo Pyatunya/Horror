@@ -186,6 +186,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3925900050113154853}
   - component: {fileID: 3925900050113154852}
+  - component: {fileID: 6593192562623662795}
   - component: {fileID: 3813976218855110978}
   - component: {fileID: 3925900050113154851}
   - component: {fileID: 3925900050113154854}
@@ -272,6 +273,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &6593192562623662795
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3925900050113154849}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 711fc11f6cd6d6549a0fc4cff417a644, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &3813976218855110978
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -285,6 +298,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _transformer: {fileID: 0}
+  _obsessiveBar: {fileID: 0}
+  _leftWall: {fileID: 0}
+  leftWall2: {fileID: 0}
+  _keyPanel: {fileID: 0}
+  _glovesPanel: {fileID: 0}
+  _screamer: {fileID: 0}
 --- !u!70 &3925900050113154851
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -412,6 +431,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 343dc63e7fa8df94fab3e0d8a9c25320, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _keyView: {fileID: 0}
 --- !u!114 &2809673965511113510
 MonoBehaviour:
   m_ObjectHideFlags: 0
