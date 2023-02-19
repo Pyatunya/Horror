@@ -271,6 +271,9 @@ GameObject:
   m_Component:
   - component: {fileID: 6820157400420136766}
   - component: {fileID: 6820157400420136767}
+  - component: {fileID: 908221694956524520}
+  - component: {fileID: 8999385635599245246}
+  - component: {fileID: 946236255661984263}
   m_Layer: 5
   m_Name: Obsession Bar
   m_TagString: Untagged
@@ -351,6 +354,48 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &908221694956524520
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6820157400420136764}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 53add3e4b68f417bb4749d1913f2a717, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _slider: {fileID: 6820157400420136767}
+  _timeToVisualize: 0.5
+--- !u!114 &8999385635599245246
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6820157400420136764}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7725c10a8ed943109657eba38084b6c7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _obsession: {fileID: 946236255661984263}
+  _secondsForIncrease: 0.1
+  _value: 0.1
+--- !u!114 &946236255661984263
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6820157400420136764}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8fe38435b6091c74b9bbaf4bb649cf57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _view: {fileID: 908221694956524520}
 --- !u!1 &6820157400712258797
 GameObject:
   m_ObjectHideFlags: 0

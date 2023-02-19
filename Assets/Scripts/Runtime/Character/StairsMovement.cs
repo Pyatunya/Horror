@@ -12,6 +12,14 @@ namespace Game.Model
         private bool isOnFirstFloor;
         private StairPoint _currentStairPoint;
 
+        public bool IsOnFirstFloor { get; private set; }
+        public bool IsOnSecondFloor { get; private set; }
+
+        private void Awake()
+        {
+            IsOnFirstFloor = true;
+        }
+
         private void OnTriggerEnter2D(Collider2D collision)
         {
             if (collision.TryGetComponent<StairPoint>(out StairPoint stairPoint))
@@ -44,10 +52,14 @@ namespace Game.Model
                 if (isOnFirstFloor)
                 {
                     transform.position = _secondFloor.transform.position;
+                    IsOnFirstFloor = false;
+                    IsOnSecondFloor = true;
                 }
                 else
                 {
                     transform.position = _firstFloor.transform.position;
+                    IsOnFirstFloor = true;
+                    IsOnSecondFloor = false;
                 }
             }
         }

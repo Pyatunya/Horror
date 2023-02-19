@@ -8,5 +8,28 @@ namespace Game.Model.Character
         {
             throw new NotImplementedException();
         }
+
+        internal static void BadEndGame(string name)
+        {
+            switch (name)
+            {
+                case "Electricity":
+                    //KillByElecticity();
+                    break;
+                case "Knife":
+                    //KillByKnife();
+                    break;
+                case "Window":
+                    //DoSuicideAroundWindow();
+                    break;
+
+
+            }
+        }
+
+        public void KillByElecticity()
+        {
+
+        }
     }
 }

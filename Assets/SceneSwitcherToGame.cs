@@ -26,4 +26,6 @@ public class SceneSwitcherToGame : MonoBehaviour
     {
         SceneManager.LoadScene(1);
     }
+
+    
 }

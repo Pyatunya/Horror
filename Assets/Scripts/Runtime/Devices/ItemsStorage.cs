@@ -5,16 +5,38 @@ namespace Game.Model
 {
     public class ItemsStorage : MonoBehaviour
     {
+        [SerializeField] private KeyPanelInventory _keyView;
+
         private readonly Key key;
         private readonly Glowes glowes;
         private List<Item> _items = new List<Item>();
 
-        private void OnTriggerEnter2D(Collider2D collision)
+        public bool HasKey { get; private set; }
+
+        private Item _currentItem;
+
+        private void OnTriggerStay2D(Collider2D collision)
         {
             if (collision.gameObject.TryGetComponent(out Item item))
             {
-                _items.Add(item);
-                collision.gameObject.SetActive(false);
+                _currentItem = item;
+                
+            }
+        }
+
+        private void Update()
+        {
+            if (Input.GetKeyDown(KeyCode.E) && _currentItem != null)
+            {
+                _items.Add(_currentItem);
+                _currentItem.gameObject.SetActive(false);
+
+                
+            }
+            if (_items.Contains(key))
+            {
+                Debug.Log("Хуй знает");
+                HasKey = true;
             }
         }
 
